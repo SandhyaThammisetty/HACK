@@ -1,0 +1,171 @@
+{\rtf1\ansi\ansicpg1252\cocoartf2867
+\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fswiss\fcharset0 Helvetica;}
+{\colortbl;\red255\green255\blue255;}
+{\*\expandedcolortbl;;}
+\paperw11900\paperh16840\margl1440\margr1440\vieww33400\viewh20280\viewkind0
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+
+\f0\fs24 \cf0 <!DOCTYPE html>\
+<html lang="en">\
+<head>\
+    <meta charset="UTF-8">\
+    <title>StyleSense - Backend Description</title>\
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">\
+\
+    <style>\
+        body \{\
+            font-family: Arial, sans-serif;\
+            background: #f4f6f9;\
+            margin: 0;\
+            padding: 0;\
+        \}\
+\
+        header \{\
+            background: #111;\
+            color: white;\
+            text-align: center;\
+            padding: 20px;\
+        \}\
+\
+        .container \{\
+            width: 90%;\
+            max-width: 1000px;\
+            margin: 30px auto;\
+            background: white;\
+            padding: 30px;\
+            border-radius: 10px;\
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);\
+        \}\
+\
+        h2 \{\
+            color: #333;\
+            margin-top: 20px;\
+        \}\
+\
+        ul \{\
+            margin-left: 20px;\
+        \}\
+\
+        .section \{\
+            margin-bottom: 25px;\
+        \}\
+\
+        .highlight \{\
+            background: #e8f0fe;\
+            padding: 10px;\
+            border-radius: 6px;\
+        \}\
+\
+        footer \{\
+            text-align: center;\
+            padding: 15px;\
+            background: #111;\
+            color: white;\
+            margin-top: 40px;\
+        \}\
+    </style>\
+</head>\
+<body>\
+\
+<header>\
+    <h1>StyleSense Backend Architecture</h1>\
+    <p>Generative AI Powered Fashion Recommendation System</p>\
+</header>\
+\
+<div class="container">\
+\
+    <div class="section">\
+        <h2>1. Overview</h2>\
+        <p>\
+            The backend of <strong>StyleSense</strong> is responsible for handling user inputs,\
+            processing image and text data, communicating with Generative AI models,\
+            and returning intelligent fashion recommendations.\
+        </p>\
+    </div>\
+\
+    <div class="section">\
+        <h2>2. Technologies Used</h2>\
+        <ul>\
+            <li>Node.js (Server Environment)</li>\
+            <li>Express.js (API Handling)</li>\
+            <li>Gemini API (Generative AI Integration)</li>\
+            <li>MongoDB / Firebase (Database - Optional)</li>\
+            <li>RESTful API Architecture</li>\
+        </ul>\
+    </div>\
+\
+    <div class="section">\
+        <h2>3. Backend Workflow</h2>\
+        <ul>\
+            <li>User submits preferences and uploads image.</li>\
+            <li>Frontend sends data to backend API using POST request.</li>\
+            <li>Backend processes the input data.</li>\
+            <li>Image is analyzed (if uploaded).</li>\
+            <li>Prompt is generated dynamically for Gemini AI.</li>\
+            <li>Gemini returns personalized fashion recommendations.</li>\
+            <li>Backend sends AI-generated response to frontend.</li>\
+        </ul>\
+    </div>\
+\
+    <div class="section">\
+        <h2>4. API Structure</h2>\
+        <div class="highlight">\
+            <p><strong>POST /generate-style</strong></p>\
+            <p>Request Body:</p>\
+            <ul>\
+                <li>occasion</li>\
+                <li>preferredColors</li>\
+                <li>styleType</li>\
+                <li>image (optional)</li>\
+            </ul>\
+            <p>Response:</p>\
+            <ul>\
+                <li>AI generated outfit suggestion</li>\
+                <li>Styling tips</li>\
+                <li>Trend insights</li>\
+            </ul>\
+        </div>\
+    </div>\
+\
+    <div class="section">\
+        <h2>5. AI Prompt Engineering</h2>\
+        <p>\
+            The backend dynamically creates structured prompts based on user inputs.\
+            Example prompt:\
+        </p>\
+        <div class="highlight">\
+            "Generate a fashion recommendation for a college occasion,\
+            pastel colors preference, minimal style. Suggest outfit details,\
+            accessories, and trending fashion insights."\
+        </div>\
+    </div>\
+\
+    <div class="section">\
+        <h2>6. Security & Performance</h2>\
+        <ul>\
+            <li>Input validation</li>\
+            <li>API key protection (server-side only)</li>\
+            <li>Error handling middleware</li>\
+            <li>Rate limiting</li>\
+            <li>Secure image upload handling</li>\
+        </ul>\
+    </div>\
+\
+    <div class="section">\
+        <h2>7. Future Enhancements</h2>\
+        <ul>\
+            <li>User login and profile management</li>\
+            <li>Saved outfit history</li>\
+            <li>Real-time trend analysis</li>\
+            <li>Voice-based style assistant</li>\
+        </ul>\
+    </div>\
+\
+</div>\
+\
+<footer>\
+    \'a9 2026 StyleSense Backend | Powered by Generative AI\
+</footer>\
+\
+</body>\
+</html>}
